@@ -1,4 +1,4 @@
-import { FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 function Footer() {
     let dynamicYear = new Date().getFullYear();

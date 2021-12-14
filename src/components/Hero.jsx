@@ -19,7 +19,7 @@ function Hero() {
                   </div>
                   
                     <div class="hero__cta-buttons">
-                        <Button children={`Get in touch >`} version='primary' goTo='contact' />
+                        <Button children={`Reach out >`} version='primary' goTo='contact' />
                        <Button children={'Learn more'} version='secondary' goTo='#about' />
                     </div>
                 </div>
