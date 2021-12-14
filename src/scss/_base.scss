@@ -1,3 +1,117 @@
+@import "variables";
+
 h2 {
-    color: blue;
+  color: blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $white-color;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  //   color: $link-color;
+
+  //   &:hover {
+  //     color: $hover-color-white;
+  //   }
+}
+
+.tag {
+  font-size: 1.2rem;
+}
+
+.nohover {
+  pointer-events: none;
+}
+
+// // i {
+// color: $text-color;
+// // }
+
+p {
+  font-size: 1.6rem;
+  //   color: $text-color;
+}
+
+main {
+  min-height: calc(100vh - 22rem);
+  padding-top: 9rem;
+}
+
+.container {
+  max-width: 119rem;
+  width: 85%;
+  margin: 2.5rem auto;
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+section {
+  padding: 5rem 0;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 85%;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    h1 {
+      font-size: 3.3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+  .line {
+    margin-top: 3rem;
+  }
+  .p-email {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-height: 740px) {
+  .container-center {
+    height: 60%;
+  }
+}
+
+@media (max-height: 600px) {
+  .container-center {
+    height: 70%;
+  }
 }
