@@ -27,9 +27,9 @@
     }
   }
 
-  &__icon i {
-    font-size: 2.7rem;
-    margin-right: 1rem;
+  &__icon svg {
+    font-size: 3rem;
+    margin-right: 1.2rem;
     color: $white-color;
 
     &:hover {
