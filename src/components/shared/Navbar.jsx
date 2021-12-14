@@ -2,6 +2,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 function Navbar() {
     return (
+        <header>
         <nav className="navbar">
             <div className="container navbar__container">
                 <div className="navbar__top-section">
@@ -17,6 +18,7 @@ function Navbar() {
                 </ul> 
             </div>
         </nav> 
+        </header>
         
     )
 }

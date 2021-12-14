@@ -1,0 +1,24 @@
+@import "variables";
+
+// wallpapers
+.wallpapers {
+  text-align: center;
+
+  .wallpaper {
+    text-align: left;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  img {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  &__buttons {
+    .btn {
+      margin: 2rem 0 1rem 0;
+      display: inline-block;
+    }
+  }
+}

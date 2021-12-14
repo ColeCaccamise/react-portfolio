@@ -1,0 +1,39 @@
+@import "variables";
+.btn {
+  padding: 1rem 2rem;
+  border-radius: $radius;
+  margin-right: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.2s ease;
+  box-shadow: $box-shadow;
+  display: inline-block;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &--black {
+    background-color: black;
+    color: $white-color;
+  }
+
+  &--primary {
+    background: $white-color;
+    color: black;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+      background-color: $hover-color-white;
+    }
+  }
+
+  &--secondary {
+    border: 1px solid $white-color;
+    color: $white-color;
+  }
+}
