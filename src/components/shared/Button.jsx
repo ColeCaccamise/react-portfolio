@@ -1,15 +1,24 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-function Button({ children, version, goTo }) {
+function Button({ children, version, goTo, external }) {
     return (
-        <a href={`${goTo}`} className={`btn btn--${version}`}>
+        external ? <a href={`${goTo}`} className={`btn btn--${version}`}>
+        {children}
+        </a> 
+        : <Link to={`${goTo}`} className={`btn btn--${version}`}>
             {children}
-        </a>
+        </Link>
     )
 }
 
 Button.propTypes = {
     children: PropTypes.string,
+    external: PropTypes.bool
+}
+
+Button.defaultProps = {
+    external: false
 }
 
 export default Button

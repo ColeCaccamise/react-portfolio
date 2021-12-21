@@ -1,93 +1,75 @@
-import { FaYoutube, FaInstagram, FaTwitter, FaGithub,FaLaptopCode,FaDribbble } from 'react-icons/fa'
+import { FaYoutube, FaInstagram, FaTwitter, FaGithub,FaDribbble } from 'react-icons/fa';
+import Card from './shared/Card';
+
+const creator = {
+  'icons': [
+    {'url':'https://youtube.com/c/colecaccamise', 'aria': 'YouTube', 'component': <FaYoutube/> },
+    {'url':'https://twitter.com/colecaccamise', 'aria': 'Twitter', 'component': <FaTwitter/> },
+    {'url':'https://instagram.com/cole.caccamise', 'aria': 'Instagram', 'component': <FaInstagram/> }
+  ],
+  'heading': 'Content Creator',
+  'description': [
+    'You can find me most often creating tech videos on YouTube, but also sharing product shots on Instagram.',
+    'My goal with content is to express my creativity as a filmmaker/photographer while also providing informative reviews that hopefully give you a few laughs.',
+    'Linked above are all my social platforms, and below is the gear I use to produce everything I share online.'
+  ],
+  'cta': {
+    'version': 'black',
+    'text': 'My Gear & Equipment >',
+    'goTo': 'https://kit.co/colecaccamise',
+    'external': true
+  }
+}
+
+const developer = {
+  'icons': [
+    {'url':'https://github.com/colecaccamise', 'aria': 'YouTube', 'component': <FaGithub/> },
+  ],
+  'heading': 'Front-end Web Developer',
+  'description': [
+    "I know how to turn my designs to life and built websites.",
+    "I know HTML/CSS/JS, but also ReactJS, which this website is built with."
+  ],
+  'cta': {
+    'version': 'black',
+    'text': 'My Web Projects >',
+    'goTo': '/work',
+  }
+}
+
+const designer = {
+  'icons': [
+    {'url':'https://dribbble.com/colecaccamise', 'aria': 'Dribbble', 'component': <FaDribbble/> },
+  ],
+  'heading': 'Designer',
+  'description': [
+    "I design interfaces for both mobile and web apps using Sketch and Figma.",
+    'I also use Adobe Illustrator to design wallpaper and logos.'
+  ],
+  'cta': {
+    'version': 'black',
+    'text': 'My Design Work >',
+    'goTo': '/work'
+  }
+}
 
 function About() {
     return (
         <>
         <section id="about">
-          <div class="container about__container">
-          <div class="about__summary">
-            <h2 class="about__heading">About Me.</h2>
-            <h3 class="about__subheading">What I can do</h3>
+          <div className="container about__container">
+          <div className="about__summary">
+            <h2 className="about__heading">About Me.</h2>
+            <h3 className="about__subheading">What I can do</h3>
         </div>
 
-        <div class="about__text"></div>
+        <div className="about__text"></div>
           
-          <div class="cards">
+          <div className="cards">
 
-            <div class="card">
-              <div class="card__icons">
-                <a href="https://youtube.com/c/colecaccamise" class="card__icon" aria-label="YouTube">
-                  <FaYoutube />
-                </a>
-                <a href="https://twitter.com/colecaccamise" class="card__icon" aria-label="Twitter">
-               <FaTwitter />
-              </a>
-                <a href="https://instagram.com/cole.caccamise" class="card__icon" aria-label="Instagram">
-                 <FaInstagram />
-                </a>
-
-              </div>
-
-              <h3>Content Creator</h3>
-              <p class="card__description">
-                You can find me most often creating tech videos on YouTube, but also sharing product shots on Instagram.</p>
-
-              <p class="card__description">
-                My goal with content is to express my creativity as a filmmaker/photographer while also providing informative reviews that hopefully give you a few laughs.
-              </p>
-
-              <p class='card__description'>Linked above are all my social platforms, and below is the gear I use to produce everything I share online.</p>
-              
-              <a href="http://kit.co/colecaccamise" class="card__cta btn btn--black">{'My Gear & Equipment >'}</a>
-            </div>
-            
-            <div class="card">
-              <div class="card__icons">
-                <a href="https://github.com/colecaccamise" class="card__icon" aria-label='GitHub'>
-                  <FaGithub />
-                  </a>
-                  <a href="portfolio" class="card__icon" aria-label="Portfolio">              
-                   <FaLaptopCode />
-                    </a>
-              </div>
-
-
-              <h3>Web Developer</h3>
-                <p class="card__description">
-                  I'm currently a Computer Science student and front-end developer. I most enjoy building websites like this one.
-                </p>
-
-                <p class="card__description">
-                  While coding is mostly a hobby, it allows me to provide a unique perspective when I'm trying out new gadgets.
-                </p>
-
-                <a href="work" class="card__cta btn btn--black">{'See my projects >'}</a>
-            </div>
-
-            <div class="card">
-              <div class="card__icons">
-                <a href="https://dribbble.com/colecaccamise" class="card__icon" aria-label="Dribbble">
-                  <FaDribbble />
-                </a>
-
-              </div>
-
-              <h3>Designer</h3>
-              <p class="card__description">
-                I like to design clean interfaces for web and mobile sites, personal branding material, and wallpapers.
-              </p>
-
-              <p class="card__description">
-                I like to include my design work within my content, as you may have seen my wallpapers that pop up when talking about tech gadgets. 
-              </p>
-
-              <p class="card__description">
-                If you want them for yourself, they're available for download <a class="underline " href="/wallpapers">here</a>.
-              </p>
-
-              <a href="portfolio" class="card__cta btn btn--black">{'See my work >'}</a>
-            </div>
-
+            <Card cardInfo={creator} />
+            <Card cardInfo={designer} />
+            <Card cardInfo={developer} />
 
           </div>
         </div>

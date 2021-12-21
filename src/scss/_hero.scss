@@ -47,7 +47,9 @@ h1 {
 }
 
 .hero__cta-buttons {
-  margin: 10px 0;
+  .btn--primary {
+    margin-right: 2rem;
+  }
 }
 
 @keyframes updown {

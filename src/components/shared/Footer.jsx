@@ -1,17 +1,18 @@
+import { Link } from 'react-router-dom';
 import { FaYoutube, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 function Footer() {
     let dynamicYear = new Date().getFullYear();
     
     return (
-        <footer class="footer">
-        <div class="container footer__container">
-        <div class="line"></div>
+        <footer className="footer">
+        <div className="container footer__container">
+        <div className="line"></div>
       
-        <div class='footer__content'>
+        <div className='footer__content'>
         
             <div>
-                <p class='copyright'>&copy; <span id="year">{dynamicYear}</span> <a href="/"><span class="footer-name">Cole Caccamise</span></a></p>
+                <p className='copyright'>&copy; <span id="year">{dynamicYear}</span> <Link to="/"><span className="footer-name">Cole Caccamise</span></Link></p>
             </div>
             <div>
                 <a href="https://youtube.com/c/colecaccamise" className="footer__icon" aria-label="YouTube">
