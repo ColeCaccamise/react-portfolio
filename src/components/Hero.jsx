@@ -1,4 +1,4 @@
-import profileImage from '../assets/profile.webp';
+import profileImage from '../assets/profile.JPG';
 import Button from './shared/Button';
 
 function Hero() {
@@ -9,7 +9,8 @@ function Hero() {
                 <div className="hero__text-wrapper">
                   <div className="hero__heading">
                     <p className='hero__intro'>Hey! I'm Cole,</p>
-                    <h1>a Designer <span className="break">and Creative</span></h1> 
+                    <h1>a Creative <span className="break">&
+                     Designer</span></h1> 
                     <p className='hero__intro'>from <span className='bold'>Buffalo, NY</span>.</p>
                     
                   </div>

@@ -1,8 +1,8 @@
-import profileImg from '../assets/profile.webp';
+import profileImg from '../assets/profile.JPG';
 import LinkItem from '../components/LinkItem';
 
 function LinksPage() {
-  let latestVideo = '/';
+  let latestVideo = 'https://youtu.be/1ustroqF4sM';
 
     return (
         <main>

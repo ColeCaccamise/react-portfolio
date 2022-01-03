@@ -6,8 +6,8 @@ function NotFoundPage() {
     return (
         <main>
 
-        <section class='error' id="error">
-            <div class="container container-center container-error">
+        <section className='error' id="error">
+            <div className="container container-center container-error">
                 <FaFrownOpen size='65'/>
                     
                 <h1>Uh oh..</h1>

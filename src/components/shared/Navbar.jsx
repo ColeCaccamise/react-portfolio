@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 import * as uuid from 'uuid';
+import logo from '../../assets/logo.svg';
 
 function Navbar() {
     const [shadow, setShadow] = useState(false);
@@ -41,14 +42,14 @@ function Navbar() {
             <div className="container navbar__container">
                 <div className="navbar__top-section">
                     <button onClick={hamburgerClick} className="hamburger"><GiHamburgerMenu /></button>
-                    <div className="navbar__logo"><Link to="/">cole<span className="semibold">caccamise.</span></Link></div>
+                    <div className="navbar__logo"><Link to="/"><img src={logo} width='250rem' alt='colecaccamise logo' /></Link></div>
                 </div> 
             
                 
                 <ul className={`navbar__menu ${showMenu ? 'flex' : ''}`}>
                     <li key={uuid.v4()}><Link to="/#about">About</Link></li>
                     <li key={uuid.v4()}><Link to="links">Links</Link></li>
-                    <li key={uuid.v4()}><Link to="portfolio">Work</Link></li>
+                    <li key={uuid.v4()}><Link to="portfolio">Portfolio</Link></li>
                     <li key={uuid.v4()}><Link to="contact" className="btn btn--primary btn-contact-navbar">Contact</Link></li>
                 </ul> 
             </div>

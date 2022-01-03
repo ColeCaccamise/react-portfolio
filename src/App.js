@@ -4,7 +4,7 @@ import Hero from './components/Hero.jsx';
 import About from './components/About';
 import LinksPage from './pages/LinksPage.jsx';
 import NotFoundPage from './pages/NotFoundPage.jsx';
-import WorkPage from './pages/WorkPage.jsx';
+import PortfolioPage from './pages/PortfolioPage.jsx';
 import WallpapersPage from './pages/WallpapersPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -26,7 +26,7 @@ function App() {
 
         <Route path='/links' element={<LinksPage />} />
 
-        <Route path='/portfolio' element={<WorkPage />} />
+        <Route path='/portfolio' element={<PortfolioPage />} />
 
         <Route path='/contact' element={<ContactPage />} />
 

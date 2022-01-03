@@ -13,7 +13,11 @@
     display: block;
     width: 0;
     height: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
 
     i {
       color: $white-color;
@@ -66,15 +70,13 @@
     font-weight: 200;
     color: $white-color;
     text-align: center;
-
+    img:hover {
+      opacity: 0.8;
+    }
     a {
       color: $white-color;
       font-size: 3rem;
       letter-spacing: 0.5px;
-
-      &:hover {
-        color: $hover-color-white;
-      }
     }
 
     &__top-section {
@@ -110,6 +112,14 @@
       margin-right: 2rem;
       width: 2.4rem;
       height: 100%;
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      outline: inherit;
+      display: flex;
+      align-self: center;
     }
 
     &__menu {

@@ -33,7 +33,7 @@ const developer = {
   'cta': {
     'version': 'black',
     'text': 'My Web Projects >',
-    'goTo': '/work',
+    'goTo': '/portfolio',
   }
 }
 
