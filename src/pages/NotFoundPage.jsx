@@ -11,7 +11,7 @@ function NotFoundPage() {
                 <FaFrownOpen size='65'/>
                     
                 <h1>Uh oh..</h1>
-                <p>The page you're looking for doesn't exist</p>
+                <p>The page you're looking for does not exist</p>
 
                 <Button children={`Go back to site`} version='primary' goTo='/' external={false} />
             </div>
