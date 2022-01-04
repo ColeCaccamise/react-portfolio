@@ -19,7 +19,7 @@ function PortfolioPage() {
                       </div>
                         <div className="card__info">
                             <h3>Portfolio site</h3>
-                            <a className="tag nohover">Web Development</a>     
+                            <p className="tag ">Web Development</p>     
                         </div>            
                         <p className="card__description">The website you're looking at right now. Showcases my skills and what I'm up to.</p>
                         <h4 className='card__subheading'>Tech stack</h4>
@@ -42,7 +42,7 @@ function PortfolioPage() {
                   </div>
                     <div className="card__info">
                         <h3>Guessing Game!</h3>
-                        <a className="tag nohover">Web Development</a>     
+                        <p className="tag">Web Development</p>     
                     </div>   
                     <p className="card__description">Generates a random number, then tells you if your guess is too high or low</p>
                     <h4 className='card__subheading'>Tech stack</h4>
@@ -65,7 +65,7 @@ function PortfolioPage() {
                   </div>
                     <div className="card__info">
                         <h3>Reading List App</h3>
-                        <a className="tag nohover">UI Design</a>     
+                        <p className="tag">UI Design</p>     
                     </div>   
                     <p className="card__description">A UI I designed for a concept iOS app. Allows you to keep track of books you're reading and find new ones.</p>
                     <h4 className='card__subheading'>Tools used</h4>

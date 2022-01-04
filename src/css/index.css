@@ -20,7 +20,8 @@ a {
     color: rgba(255, 255, 255, 0.8); }
 
 .tag {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  color: #888888; }
 
 .nohover {
   pointer-events: none; }
@@ -118,6 +119,12 @@ section {
 
 .flex {
   display: flex; }
+
+.img {
+  width: 100%; }
+
+.align-left {
+  text-align: left !important; }
 
 .navbar {
   position: fixed;
