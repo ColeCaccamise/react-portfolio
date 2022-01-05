@@ -20,7 +20,7 @@ function WallpapersPage() {
                     <div className="wallpapers__buttons">
 
                         <script src="https://gumroad.com/js/gumroad.js"></script>
-                        <a className="gumroad-button btn btn--primary btn-wallpaper" href="https://colecaccamise.gumroad.com/l/justcreate">Buy my product</a>
+                        <a className="gumroad-button btn btn--primary btn-wallpaper" href="https://colecaccamise.gumroad.com/l/justcreate">Download Wallpaper</a>
                     </div>
                     
                     
