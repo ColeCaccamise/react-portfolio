@@ -47,7 +47,7 @@ function Navbar() {
             
                 
                 <ul className={`navbar__menu ${showMenu ? 'flex' : ''}`}>
-                    <li key={uuid.v4()}><Link to="/#about">About</Link></li>
+                    <li key={uuid.v4()}><a href="/#about">About</a></li>
                     <li key={uuid.v4()}><Link to="links">Links</Link></li>
                     <li key={uuid.v4()}><Link to="portfolio">Portfolio</Link></li>
                     <li key={uuid.v4()}><Link to="contact" className="btn btn--primary btn-contact-navbar">Contact</Link></li>
