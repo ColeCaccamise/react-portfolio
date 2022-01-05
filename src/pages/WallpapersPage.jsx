@@ -1,4 +1,4 @@
-// import Button from "../components/shared/Button";
+import Button from "../components/shared/Button";
 import justcreate from '../assets/just-create.png';
 
 function WallpapersPage() {
@@ -16,14 +16,8 @@ function WallpapersPage() {
 
                     <img src={justcreate} alt="justcreate" className='img' />
 
+                    <Button children='Download wallpaper' version={'primary'} goTo='https://gumroad.com/l/PjMQP' external={true} />
 
-                    <div className="wallpapers__buttons">
-
-                        <script src="https://gumroad.com/js/gumroad.js"></script>
-                        <a className="gumroad-button btn btn--primary btn-wallpaper" href="https://colecaccamise.gumroad.com/l/justcreate">Download Wallpaper</a>
-                    </div>
-                    
-                    
                 </div>
 
             </div>
