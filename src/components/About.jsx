@@ -52,7 +52,7 @@ const designer = {
     {
     'version': 'black',
     'children': 'My Design Work >',
-    'goTo': '/work'
+    'goTo': '/portfolio'
     }
   ]
 }
