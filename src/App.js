@@ -32,7 +32,7 @@ function App() {
 
         <Route path='/wallpapers' element={<WallpapersPage />} />
 
-        <Route path='*' element={
+        <Route path='/*' element={
          <NotFoundPage />
         } />
       

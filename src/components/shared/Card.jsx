@@ -2,30 +2,51 @@
 import Button from './Button';
 
 function Card({cardInfo}) {
-  console.log(cardInfo)
+
     return (
         <div className="card">
-
-          <div className="card__icons">
-            {cardInfo.icons ? cardInfo.icons.map(icon => {
-              return (
-                <a href={icon.url} className="card__icon" aria-label={icon.aria}>
-                    {icon.component}
-                  </a>
-              )
-            }) : ''}
+          <div className="card__img">
+          {cardInfo.img ? <img src={cardInfo.img.src} alt={cardInfo.img.alt}></img> : ''}
           </div>
 
-          <h3>{cardInfo.heading}</h3>
+        <div className='card__icons'>
+          {cardInfo.icons ? cardInfo.icons.map(icon => {
+            return (
+              <a href={icon.url} className="card__icon" aria-label={icon.aria}>{icon.component}</a>
+            )
+          }) : 'test2'}
+        </div>
           
-            {cardInfo.description.map(desc => {
-              return (
-                <p className="card__description">{desc}</p>
-              )
-            })}
-          
+        <div className="card__info">
+          <h3>{cardInfo.heading}</h3> 
+          {cardInfo.tag ? <p className='tag'>{cardInfo.tag}</p> : ''}
+        </div>          
 
-            <Button children={cardInfo.cta.text} version={`${cardInfo.cta.version} card__cta`} goTo={cardInfo.cta.goTo} />
+       {cardInfo.description.map(desc => {
+          return (
+            <p className='card__description'>{desc}</p>
+          )
+        })}
+
+        {cardInfo.subheading ? <h4 className='card__subheading'>{cardInfo.subheading.heading}</h4> : ''}
+
+        {cardInfo.subheading ? <ul className='card__list'>
+          {cardInfo.subheading.list.map(item => {
+            return (
+              <li>{item}</li>
+            )
+          })}
+        </ul> : ''}
+
+        {/* {cardInfo.btns ? 'exists' : 'does not'} */}
+        <div className="card__buttons">
+          {cardInfo.btns.map(btn => {
+            return (
+              <Button children={btn.children} version={btn.version} goTo={btn.goTo} external={btn.external} />
+            )
+          })}
+
+        </div>
 
         </div>
     )

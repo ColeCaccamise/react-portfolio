@@ -1,8 +1,88 @@
 import portfolioSite from '../assets/portfolio-site.png';
 import guessingGame from '../assets/guessing-game.png';
 import readingList from '../assets/reading-list.png';
-import Button from '../components/shared/Button';
+import Card from '../components/shared/Card';
 import { FaGithub, FaInstagram, FaDribbble } from 'react-icons/fa';
+
+const portfolio = {
+  'img': {
+    'src': portfolioSite,
+    'alt': 'Portfolio site'
+  },
+  'tag' : 'Web Development',
+  'heading': 'Portfolio site',
+  'description': [
+    "The website you're looking at right now. Showcases my skills and what I'm up to."
+  ],
+  'subheading': {
+    'heading': 'Tech Stack',
+    'list': ['HTML', 'Sass/SCSS', "JavaSript", "React JS"]
+  },
+  'btns': [
+    { 'version': 'black margin-right',
+    'children': 'View live site',
+    'goTo': '/',
+    'external': true},
+    {'version': 'black',
+    'children': <FaGithub />,
+    'goTo': 'https://github.com/ColeCaccamise/react-portfolio',
+    'external': true}
+  ]
+}
+
+const guessing = {
+  'img': {
+    'src': guessingGame,
+    'alt': 'Guessing Game!'
+  },
+  'tag' : 'Web Development',
+  'heading': 'Guessing Game!',
+  'description': [
+    "Generates a random number, then tells you if your guess is too high or low"
+  ],
+  'subheading': {
+    'heading': 'Tech Stack',
+    'list': ['HTML', 'Sass/SCSS', "JavaSript"]
+  },
+  'btns': [
+    { 'version': 'black margin-right',
+    'children': 'View live site',
+    'goTo': 'https://colesguessinggame.netlify.app/',
+    'external': true},
+    {'version': 'black',
+    'children': <FaGithub />,
+    'goTo': 'https:/github.com/ColeCaccamise/guessinggame',
+    'external': true}
+  ]
+  
+}
+
+const reading = {
+  'img': {
+    'src': readingList,
+    'alt': 'Reading List App'
+  },
+  'tag' : 'UI Design',
+  'heading': 'Reading List App',
+  'description': [
+    "A UI I designed for a concept iOS app. Allows you to keep track of books you're reading and find new ones."
+  ],
+  'subheading': {
+    'heading': 'Tools used',
+    'list': ['Mockup (wireframing)', 'Sketch']
+  },
+  'btns': [
+    { 'version': 'black margin-right',
+    'children': <FaInstagram />,
+    'goTo': 'https://www.instagram.com/p/CO5HS7IAEox/',
+    'external': true},
+    {'version': 'black',
+    'children': <FaDribbble />,
+    'goTo': 'https://dribbble.com/shots/15660204-Book-Reading-List-Mobile-App',
+    'external': true}
+  ]
+  
+}
 
 function PortfolioPage() {
     return (
@@ -13,72 +93,12 @@ function PortfolioPage() {
                 <p>Check out what I've worked on in the past</p>
 
                 <div className="cards">
-                    <div className="card">
-                      <div className="card__img">
-                      <img src={portfolioSite} alt="Portfolio Site"></img>
-                      </div>
-                        <div className="card__info">
-                            <h3>Portfolio site</h3>
-                            <p className="tag ">Web Development</p>     
-                        </div>            
-                        <p className="card__description">The website you're looking at right now. Showcases my skills and what I'm up to.</p>
-                        <h4 className='card__subheading'>Tech stack</h4>
-                        <ul className="card__list">
-                            <li>HTML</li>
-                            <li>Sass / SCSS</li>
-                            <li>JavaScript</li>
-                            <li>React JS</li>
-                          </ul>
-                        <div className="card__buttons">
-                          <Button version='black margin-right' children='View live site' goTo='/' />
-                        <Button version='black' children={<FaGithub size='16' />} goTo='https://github.com/ColeCaccamise/colecaccamise'></Button>
-                        </div>
-                        
-                    </div>
+                    
 
-                <div className="card">
-                  <div className="card__img">
-                    <img src={guessingGame} alt=""></img>
-                  </div>
-                    <div className="card__info">
-                        <h3>Guessing Game!</h3>
-                        <p className="tag">Web Development</p>     
-                    </div>   
-                    <p className="card__description">Generates a random number, then tells you if your guess is too high or low</p>
-                    <h4 className='card__subheading'>Tech stack</h4>
-                    <ul className="card__list">
-                        <li>HTML</li>
-                        <li>SCSS</li>
-                        <li>JavaScript</li>
-                      </ul>
+                <Card cardInfo={portfolio} />
+                <Card cardInfo={guessing} />
+                <Card cardInfo={reading} />
 
-                      <div className="card__buttons">
-                          <Button version='black margin-right' children='View live site' goTo='https://colesguessinggame.netlify.com' external={true} />
-                          <Button version='black' children={<FaGithub size='16' />} goTo='https://github.com/ColeCaccamise/guessinggame' external={true}></Button>
-
-                    </div>
-                </div>
-                
-                <div className="card">
-                  <div className="card__img">
-                    <img className="img-ui" src={readingList} alt=""></img>
-                  </div>
-                    <div className="card__info">
-                        <h3>Reading List App</h3>
-                        <p className="tag">UI Design</p>     
-                    </div>   
-                    <p className="card__description">A UI I designed for a concept iOS app. Allows you to keep track of books you're reading and find new ones.</p>
-                    <h4 className='card__subheading'>Tools used</h4>
-                    <ul className="card__list">
-                        <li>Mockup (wireframing)</li>
-                        <li>Sketch</li>
-                      </ul>
-
-                      <div className="card__buttons">
-                        <Button version='black margin-right' children={<FaInstagram size='16' />} goTo='https://github.com/ColeCaccamise/colecaccamise'></Button>
-                        <Button version='black' children={<FaDribbble size='16' />} goTo='https://github.com/ColeCaccamise/colecaccamise'></Button>
-                    </div>
-                </div>
 
             </div>
 

@@ -13,12 +13,14 @@ const creator = {
     'My goal with content is to express my creativity as a filmmaker/photographer while also providing informative reviews that hopefully give you a few laughs.',
     'Linked above are all my social platforms, and below is the gear I use to produce everything I share online.'
   ],
-  'cta': {
+  'btns': [
+    {
     'version': 'black',
-    'text': 'My Gear & Equipment >',
+    'children': 'My Gear & Equipment >',
     'goTo': 'https://kit.co/colecaccamise',
     'external': true
-  }
+    }
+  ]
 }
 
 const developer = {
@@ -30,11 +32,11 @@ const developer = {
     "I know how to turn my designs to life and built websites.",
     "I know HTML/CSS/JS, but also ReactJS, which this website is built with."
   ],
-  'cta': {
-    'version': 'black',
-    'text': 'My Web Projects >',
-    'goTo': '/portfolio',
-  }
+  'btns': [
+    {'version': 'black',
+    'children': 'My Web Projects >',
+    'goTo': '/portfolio'},
+  ]
 }
 
 const designer = {
@@ -46,11 +48,13 @@ const designer = {
     "I design interfaces for both mobile and web apps using Sketch and Figma.",
     'I also use Adobe Illustrator to design wallpaper and logos.'
   ],
-  'cta': {
+  'btns': [
+    {
     'version': 'black',
-    'text': 'My Design Work >',
+    'children': 'My Design Work >',
     'goTo': '/work'
-  }
+    }
+  ]
 }
 
 function About() {
