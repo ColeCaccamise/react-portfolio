@@ -14,7 +14,7 @@ function ContactPage() {
                         <input className='name' type="text" name="name" placeholder="Name" required></input>
                         <input className='email' type="email" name="email" placeholder="Email" required></input>
                         <textarea id='textarea' name="textarea" placeholder="I'd like to chat about..." required></textarea>
-                        <button onclick='shake()' type="submit" className='btn btn--primary'>Send Message <i className="fas fa-paper-plane"></i></button>
+                        <button onClick='shake()' type="submit" className='btn btn--primary'>Send Message <i className="fas fa-paper-plane"></i></button>
                     </form>
 
                     

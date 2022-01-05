@@ -12,6 +12,10 @@ function Navbar() {
         showMenu ? setShowMenu(false) : setShowMenu(true);
     }
 
+    function closeHamburger() {
+        setShowMenu(false);
+    }
+
     window.onresize = () => {
         if(window.innerWidth < 900) {
            setShowMenu(false);
@@ -42,15 +46,15 @@ function Navbar() {
             <div className="container navbar__container">
                 <div className="navbar__top-section">
                     <button onClick={hamburgerClick} className="hamburger"><GiHamburgerMenu /></button>
-                    <div className="navbar__logo"><Link to="/"><img src={logo} width='250rem' alt='colecaccamise logo' /></Link></div>
+                    <div className="navbar__logo"><Link onClick={closeHamburger}  to="/"><img src={logo} width='250rem' alt='colecaccamise logo' /></Link></div>
                 </div> 
             
                 
                 <ul className={`navbar__menu ${showMenu ? 'flex' : ''}`}>
-                    <li key={uuid.v4()}><a href="/#about">About</a></li>
-                    <li key={uuid.v4()}><Link to="links">Links</Link></li>
-                    <li key={uuid.v4()}><Link to="portfolio">Portfolio</Link></li>
-                    <li key={uuid.v4()}><Link to="contact" className="btn btn--primary btn-contact-navbar">Contact</Link></li>
+                    <li key={uuid.v4()}><a onClick={closeHamburger} href="/#about">About</a></li>
+                    <li key={uuid.v4()}><Link onClick={closeHamburger}  to="links">Links</Link></li>
+                    <li key={uuid.v4()}><Link onClick={closeHamburger}  to="portfolio">Portfolio</Link></li>
+                    <li key={uuid.v4()}><Link onClick={closeHamburger}  to="contact" className="btn btn--primary btn-contact-navbar">Contact</Link></li>
                 </ul> 
             </div>
         </nav> 
