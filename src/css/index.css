@@ -566,9 +566,15 @@ h1 {
     background-color: black;
     color: #f9f9fb; }
   .btn--primary {
+    background: #0a7896;
+    color: #f9f9fb;
+    font-weight: 600; }
+    .btn--primary:hover {
+      opacity: 0.8; }
+  .btn--white {
     background: #f9f9fb;
     color: black; }
-    .btn--primary:hover {
+    .btn--white:hover {
       color: rgba(0, 0, 0, 0.7);
       background-color: rgba(255, 255, 255, 0.8); }
   .btn--secondary {
@@ -576,6 +582,8 @@ h1 {
     color: #f9f9fb; }
   .btn.margin-right {
     margin-right: 1rem; }
+  .btn-contact-navbar {
+    margin-top: 0; }
 
 .container-error {
   height: 50vh; }

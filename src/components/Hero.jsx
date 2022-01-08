@@ -15,7 +15,7 @@ function Hero() {
                     
                   </div>
                     <div className="hero__copy">
-                    <p>I produce high-quality tech content and design interfaces that provide fantastic user experience.</p>
+                    <p>I share high-quality tech videos on YouTube and take product photography. I also like to design and code a bit on the side.</p>
                    
                   </div>
                   

@@ -9,8 +9,8 @@ const creator = {
   ],
   'heading': 'Content Creator',
   'description': [
-    'You can find me most often creating tech videos on YouTube, but also sharing product shots on Instagram.',
-    'My goal with content is to express my creativity as a filmmaker/photographer while also providing informative reviews that hopefully give you a few laughs.',
+    'Most of my time is spent creating tech-related content for YouTube and Instagram.',
+    'My goal with my content is to provide valuable reviews while also expressing my creativity with high production quality.',
     'Linked above are all my social platforms, and below is the gear I use to produce everything I share online.'
   ],
   'btns': [
@@ -29,8 +29,8 @@ const developer = {
   ],
   'heading': 'Front-end Web Developer',
   'description': [
-    "I know how to turn my designs to life and built websites.",
-    "I know HTML/CSS/JS, but also ReactJS, which this website is built with."
+    "I know how to bring my designs to life with interactive websites, while focusing on a fantastic user experience.",
+    "I have a solid understanding of the basics of HTML, CSS, and JavaScript, but also am familiar with Webflow. Additionally, I use Sass and React JS to make the development process easier.",
   ],
   'btns': [
     {'version': 'black',
@@ -45,8 +45,8 @@ const designer = {
   ],
   'heading': 'Designer',
   'description': [
-    "I design interfaces for both mobile and web apps using Sketch and Figma.",
-    'I also use Adobe Illustrator to design wallpaper and logos.'
+    "When I'm not making videos, I love to design websites and logos. The entirety of this website and my personal branding was done by me.",
+    "I'm familiar with both Sketch and Figma, but recently have been dabbling with Adobe Illustrator for use designing wallpapers and logos."
   ],
   'btns': [
     {
@@ -56,6 +56,8 @@ const designer = {
     }
   ]
 }
+
+const aboutData = [creator,designer,developer];
 
 function About() {
     return (
@@ -71,9 +73,9 @@ function About() {
           
           <div className="cards">
 
-            <Card cardInfo={creator} />
-            <Card cardInfo={designer} />
-            <Card cardInfo={developer} />
+          {aboutData.map(data => {
+                  return (<Card cardInfo={data} />) 
+                })}
 
           </div>
         </div>
