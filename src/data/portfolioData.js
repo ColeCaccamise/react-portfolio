@@ -2,6 +2,7 @@ import { FaGithub, FaInstagram, FaDribbble } from 'react-icons/fa';
 import portfolioSite from '../assets/portfolio-site.png';
 import guessingGame from '../assets/guessing-game.png';
 import readingList from '../assets/reading-list.png';
+import * as uuid from 'uuid';
 
 const portfolioData = [{
   'img': {
@@ -26,7 +27,7 @@ const portfolioData = [{
     'children': <FaGithub />,
     'goTo': 'https://github.com/ColeCaccamise/react-portfolio',
     'external': true}
-  ]
+  ],
 },
 {
   'img': {
