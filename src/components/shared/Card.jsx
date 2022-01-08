@@ -1,4 +1,5 @@
 // import PropTypes from 'prop-types';
+import { v4 as uuidv4 } from 'uuid';
 import Button from './Button';
 
 function Card({cardInfo}) {
@@ -14,7 +15,7 @@ function Card({cardInfo}) {
             return (
               <a href={icon.url} className="card__icon" aria-label={icon.aria}>{icon.component}</a>
             )
-          }) : 'test2'}
+          }) : ''}
         </div>
           
         <div className="card__info">
@@ -33,12 +34,11 @@ function Card({cardInfo}) {
         {cardInfo.subheading ? <ul className='card__list'>
           {cardInfo.subheading.list.map(item => {
             return (
-              <li>{item}</li>
+              <li key={uuidv4()}>{item}</li>
             )
           })}
         </ul> : ''}
 
-        {/* {cardInfo.btns ? 'exists' : 'does not'} */}
         <div className="card__buttons">
           {cardInfo.btns.map(btn => {
             return (
