@@ -13,7 +13,6 @@ function Button({ children, version, goTo, external }) {
 }
 
 Button.propTypes = {
-    children: PropTypes.string,
     external: PropTypes.bool
 }
 

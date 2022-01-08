@@ -31,15 +31,6 @@ function Navbar() {
     }
     };
 
-    // window.addEventListener('resize', () => {
-    //     if(window.innerWidth < 900) {
-    //         const hamburger = document.querySelector(".hamburger");
-    //         hamburger.addEventListener('click', () => {
-    //             showMenu ? setShowMenu(false) : setShowMenu(true);
-    //         })
-    //     }
-    // })
-
     return (
         <header>
         <nav className={`navbar ${shadow ? 'box-shadow' : ''}`}>

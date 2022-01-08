@@ -1,5 +1,5 @@
 // import PropTypes from 'prop-types';
-import { v4 as uuidv4 } from 'uuid';
+import * as uuid from 'uuid';
 import Button from './Button';
 
 function Card({cardInfo}) {
@@ -34,7 +34,7 @@ function Card({cardInfo}) {
         {cardInfo.subheading ? <ul className='card__list'>
           {cardInfo.subheading.list.map(item => {
             return (
-              <li key={uuidv4()}>{item}</li>
+              <li key={uuid.v4()}>{item}</li>
             )
           })}
         </ul> : ''}
