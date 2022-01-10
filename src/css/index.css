@@ -281,8 +281,6 @@ section {
       font-size: 1.5rem;
       font-weight: 500;
       margin-top: 2rem; }
-    .cards .card__icons {
-      display: flex; }
     .cards .card__icon {
       font-size: 4.3rem;
       margin-right: 1.5rem; }
