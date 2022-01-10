@@ -13,7 +13,7 @@ function Card({cardInfo}) {
         <div className='card__icons'>
           {cardInfo.icons ? cardInfo.icons.map(icon => {
             return (
-              <a href={icon.url} className="card__icon" aria-label={icon.aria}>{icon.component}</a>
+              <a href={icon.url} className="card__icon" aria-label={icon.aria} key={uuid.v4()}>{icon.component}</a>
             )
           }) : ''}
         </div>
@@ -25,7 +25,7 @@ function Card({cardInfo}) {
 
        {cardInfo.description.map(desc => {
           return (
-            <p className='card__description'>{desc}</p>
+            <p className='card__description' key={uuid.v4()}>{desc}</p>
           )
         })}
 
@@ -42,7 +42,7 @@ function Card({cardInfo}) {
         <div className="card__buttons">
           {cardInfo.btns.map(btn => {
             return (
-              <Button children={btn.children} version={btn.version} goTo={btn.goTo} external={btn.external} />
+              <Button children={btn.children} version={btn.version} goTo={btn.goTo} external={btn.external} key={uuid.v4()} />
             )
           })}
 

@@ -1,5 +1,6 @@
 import Card from './shared/Card';
 import aboutData from '../data/aboutData';
+import * as uuid from 'uuid';
 
 function About() {
     return (
@@ -16,7 +17,7 @@ function About() {
           <div className="cards">
 
           {aboutData.map(data => {
-                  return (<Card cardInfo={data} />) 
+                  return (<Card key={uuid.v4()} cardInfo={data} />) 
                 })}
 
           </div>
