@@ -2,7 +2,7 @@ import profileImg from '../assets/profile.JPG';
 import LinkItem from '../components/LinkItem';
 
 function LinksPage() {
-  let latestVideo = 'https://youtu.be/0uff20AZn8c';
+  let latestVideo = 'https://youtu.be/Ss2bh_tBMn0';
 
     return (
         <main>
