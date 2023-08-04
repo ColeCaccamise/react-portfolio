@@ -1,9 +1,7 @@
-import profileImg from '../assets/profile.JPG';
+import profileImg from '../assets/profile.jpg';
 import LinkItem from '../components/LinkItem';
 
 function LinksPage() {
-	let latestVideo = 'https://youtu.be/uFaPlmIz0eY';
-
 	return (
 		<main>
 			<section id='links'>
@@ -17,12 +15,6 @@ function LinksPage() {
 					<p>Content Creator</p>
 
 					<div className='links__card links'>
-						<LinkItem
-							url={latestVideo}
-							heading='Watch My Latest Video'
-							external={true}
-						/>
-
 						<LinkItem
 							url='https://youtube.com/c/colecaccamise'
 							heading='YouTube'
